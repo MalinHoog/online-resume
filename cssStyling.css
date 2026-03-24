@@ -304,14 +304,34 @@ main {
 
 .card-toggle {
   width: 100%;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   padding: 1.15rem 1.2rem;
   background: transparent;
   text-align: left;
   border: 0;
-  color: var(--text);
+  color: var(--primary);
   font-size: 1rem;
   font-weight: 800;
+  cursor: pointer;
+}
+
+.card-toggle span:first-child {
+  text-decoration: underline;
+  text-decoration-color: rgba(33, 86, 85, 0.28);
+  text-underline-offset: 0.18em;
+}
+
+.card-toggle:hover,
+.card-toggle:focus-visible {
+  color: var(--secondary);
+}
+
+.card-toggle:focus-visible {
+  outline: 2px solid rgba(33, 86, 85, 0.2);
+  outline-offset: -2px;
 }
 
 .card-period {
@@ -619,4 +639,6 @@ main {
   font-weight: 600;
   line-height: 1.2;
 }
+
+
 
