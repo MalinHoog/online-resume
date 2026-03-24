@@ -325,7 +325,7 @@ main {
   color: var(--muted);
 }
 
-.role-title {
+.company-title {
   margin: 0;
   color: var(--text);
   font-weight: 700;
@@ -619,3 +619,4 @@ main {
   font-weight: 600;
   line-height: 1.2;
 }
+

@@ -3,8 +3,7 @@ const timelineCards = document.querySelectorAll(".timeline-card");
 const cardToggles = document.querySelectorAll(".card-toggle");
 const skillButtons = document.querySelectorAll(".pill");
 const skillItems = document.querySelectorAll(".skill-filter-item");
-const copyContactButton = document.querySelector("#copy-contact-button");
-const linkedInLink = document.querySelector("#linkedin-link");
+
 const scrollTopButton = document.querySelector("#scroll-top");
 
 filterButtons.forEach((button) => {
@@ -46,27 +45,6 @@ skillButtons.forEach((button) => {
   });
 });
 
-if (copyContactButton && linkedInLink) {
-  copyContactButton.addEventListener("click", async () => {
-    // Copy the actual destination URL so it can be pasted directly elsewhere.
-    const contactValue = linkedInLink.href.trim();
-
-    try {
-      await navigator.clipboard.writeText(contactValue);
-      copyContactButton.textContent = "Copied";
-
-      window.setTimeout(() => {
-        copyContactButton.textContent = "Copy LinkedIn";
-      }, 1800);
-    } catch {
-      copyContactButton.textContent = "Copy failed";
-
-      window.setTimeout(() => {
-        copyContactButton.textContent = "Copy LinkedIn";
-      }, 1800);
-    }
-  });
-}
 
 if (scrollTopButton) {
   window.addEventListener("scroll", () => {
@@ -79,3 +57,4 @@ if (scrollTopButton) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
+
