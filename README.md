@@ -4,7 +4,7 @@ This project is my personal online resume website. It is built as a simple stati
 
 ## Project Structure
 
-- `startpage.html` contains the content and structure of the resume.
+- `index.html` contains the content and structure of the resume.
 - `cssStyling.css` contains the visual styling, layout, colors, and responsive design.
 - `script.js` handles the interactive parts of the page, such as expanding experience cards, filtering sections, and the scroll-to-top button.
 
@@ -22,7 +22,7 @@ This project is my personal online resume website. It is built as a simple stati
 Because this is a static website, no installation is needed.
 
 1. Open the project folder.
-2. Open `startpage.html` in your browser.
+2. Open `index.html` in your browser.
 
 You can also open the folder in VS Code and use a live preview extension if you want a smoother development workflow.
 
@@ -33,3 +33,4 @@ The purpose of this project is to present my background, education, technical in
 ## Note About Development
 
 I built this project myself and also used Codex as support during development for parts of the structure, styling improvements, cleanup, and problem-solving.
+
